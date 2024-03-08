@@ -15,7 +15,7 @@ jobs:
       - name: Checkout with Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git clone https://nota-ai:$HF_TOKEN@huggingface.co/spaces/deepkyu/compressed-wav2lip-ex hf_demo
+        run: git clone https://nota-ai:$HF_TOKEN@huggingface.co/spaces/nota-ai/compressed-wav2lip hf_demo
       - name: Move asset files to other locations
         run: |
           rsync -ax --exclude ./hf_demo ./* hf_demo/
@@ -28,4 +28,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.comthub-actions[bot]@users.noreply.github.com"
           echo `git add . && git commit -m  "Auto-published by GitHub: https://github.com/${{github.repository}}/commit/${{github.sha}}/checks/${{github.run_id}}"`
-          git push --force https://nota-ai:$HF_TOKEN@huggingface.co/spaces/deepkyu/compressed-wav2lip-ex main
+          git push --force https://nota-ai:$HF_TOKEN@huggingface.co/spaces/nota-ai/compressed-wav2lip main
