@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  compressed-wav2lip:
+    image: nota-compressed-wav2lip:dev
+    build: ./
+    container_name: nota-compressed-wav2lip
+    ipc: host
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./:/workspace

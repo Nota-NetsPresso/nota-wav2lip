@@ -1,0 +1,26 @@
+__pycache__
+.ruff_cache/
+.DS_Store
+
+# Extension
+*.pkl
+*.jpg
+*.mp4
+*.pth
+*.pyc
+*.h5
+*.avi
+*.wav
+*.pyc
+*.mkv
+*.gif
+*.webm
+*.mp3
+*.tar
+*.gz
+*.json
+
+results*
+temp/
+sample*
+data/lrs3_v0.4_txt/lrs3_v0.4/

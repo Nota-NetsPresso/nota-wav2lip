@@ -1,0 +1,2 @@
+from nota_wav2lip.demo import Wav2LipModelComparisonDemo
+from nota_wav2lip.gradio import Wav2LipModelComparisonGradio

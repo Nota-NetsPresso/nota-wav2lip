@@ -1,0 +1,14 @@
+device: cpu
+sample:
+  video:
+    v1: "sample/2145_orig"
+    v2: "sample/2942_orig"
+    v3: "sample/4598_orig"
+    v4: "sample/4653_orig"
+    v5: "sample/13692_orig"
+  audio:
+    a1: "sample/1673_orig.wav"
+    a2: "sample/9948_orig.wav"
+    a3: "sample/11028_orig.wav"
+    a4: "sample/12640_orig.wav"
+    a5: "sample/5592_orig.wav"
